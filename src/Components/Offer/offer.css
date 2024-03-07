@@ -1,0 +1,129 @@
+.c-wrapper{
+    padding: 4rem;
+    background-color: rgb(2, 27, 27);
+}
+/* .c-container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1120px;
+    border: 1px solid #000;
+    justify-content: space-between; 
+} */
+ /* .c-container > div {
+    width: 90%;
+    display: flex;
+    max-width: 1120px;
+    justify-content: space-between;
+}  */
+.c-container{
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.c-left{
+    flex: 1;
+    width: 100%;
+    height: 600px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 6px 10px #3339a9;
+}
+.c-right{
+    flex: 1;
+    gap: 0.5rem;
+}
+.contactMode{
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.contactMode .row{
+    gap: 1rem;
+}
+.mode{
+    gap: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 300ms ease-in;
+    border: 0.8px solid rgba(128, 128, 128, 0.146);
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+.mode .btn{
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--blue);
+    justify-content: center;
+    background: var(--lightBlue);
+}
+.mode .btn:hover{
+    scale: 0.8;
+    color: white;
+    background: var(--blue-gradient);
+}
+.mode>:nth-child(1){
+    gap: 1.6rem;
+    width: 100%;
+}
+.mode .detail .primaryText{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width:700px) {
+    .c-wrapper{
+        width: 100%;
+    }
+    .c-wrapper h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .c-container{
+        flex-direction: column;
+    }
+     .c-left{
+        justify-content: center;
+    } 
+    .contactMode{
+        width: 100%;
+        
+    }
+    .row{
+        width: 100%;
+        flex-direction: column;
+    }
+    .mode{
+        width: 100%;
+        background-color: rebeccapurple;
+    }
+}
+@media screen and (max-width:300px) {
+    .c-container{
+        display: block;
+    }
+    .offer{
+        font-size: .6rem;
+        text-align: center;
+    }
+     .c-left img{
+        width: 200px;
+        margin: 0 auto;
+    } 
+    .c-right h1{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .c-right p{
+        font-size: 20px;
+    }
+    .row{
+        width: 180px;
+    }
+   
+}

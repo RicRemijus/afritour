@@ -1,0 +1,210 @@
+.reg-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: #22262a;
+    /* background: rgb(4, 4, 45); */
+}
+.reg-container{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1248px;
+    /* background: url('../../../public/images/beach10.jpg') no-repeat; */
+}
+.reg-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.col-1{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 0;
+    
+}
+.col-1 h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f8f8f8;
+}
+.col-1 h1 span{
+    color: #6948ff;
+}
+.col-1 p{
+    line-height: 1.4;
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    text-align: start;
+    margin-top: 1.2rem;
+    /* color: rgb(4, 4, 45); */
+}
+.col-1 .used-by p{
+    color: #d3d3d3;
+    font-size: 0.7rem;
+    margin: 2rem 0 1rem 0;
+}
+.brand-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-2{
+    height: 70vh;
+    padding: 1rem;
+    display: flex;
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .col-2 p{
+    color: #808080;
+} */
+.form-layout{
+    width: 400px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    background: url("/images/beach6.jpg");
+}
+.form-container{
+    padding: 1.5rem 2rem;
+}
+.sign-in-text{
+    color: #f8f8f8;
+    margin-bottom: 2rem;
+}
+.social-login span{
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    background-color: white;
+    padding: 16px 45px 6px 45px;
+}
+.col-2 .divider p{
+    width: 100%;
+    text-align: center;
+    line-height: 0.1em;
+    margin: 2rem 0 2rem;
+    border-bottom: 1px solid #6b6868;
+}
+.col-2 .divider p span{
+    color: #000;
+    padding: 0 10px;
+    font-weight: 900;
+    border-radius: 5px;
+    background: white;
+}
+.reg-form input{
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+    margin: 1.2rem 0;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #a4a2a2;
+}
+.form-footer{
+    color: black;
+    background: white;
+    border-radius: 8px;
+    color:  #2e0404;
+    /* border-bottom-left-radius: 8px;
+    border-top: 1px solid #dad0d0;
+    border-bottom-right-radius: 8px; */
+}
+.form-footer p{
+    padding: 1.5rem 2rem;
+}
+.form-footer span{font-weight: 500;}
+.form-footer span.foot-color{
+    font-weight:700;
+    color: #6948ff;
+}
+.reg-btn{
+    width: 100%;
+    padding: 8px 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #553bcb;
+    border: 1px solid #553bcb;
+}
+.reg-btn:hover{
+    background-color: #6948ff;
+    border-bottom: 1px solid #6948ff;
+}
+.welcome{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+.welcome h2{
+    color: black;
+    text-align: center;
+   margin: 2rem ;
+}
+@media screen and (max-width:940px) {
+    .reg-wrapper{
+        width: 100%;
+        height: auto;
+    }
+    .reg-container{padding: 0 1rem;}
+    .reg-content{
+        grid-template-columns: 1fr;
+    }
+    .col-1{
+        height: 90vh;
+        padding: 0.2rem;
+        max-width: 100%;
+    }
+    .reg-wrapper h1{font-size: 2rem;}
+}
+
+@media screen and (max-width:700px){
+    .reg-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social-login span{
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    background-color: white;
+    /* padding: 10px 15px 15px 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .col-1 p{
+        line-height: 1.4;
+        color: #f8f8f8;
+        font-size: 1rem;
+        text-align: start;
+        margin-top: 1.2rem;
+    }
+    .brand-icons{
+        display: block;
+        align-items: center;
+        flex-direction: column;
+    }
+    .col-2{
+        margin-bottom: 2rem;
+    }
+    .form-layout{
+        width: 90%;
+
+    }
+    .welcome{
+        width: 280px;
+    }
+}
+.busta{
+    color: #6948ff;
+    color:#553bcb;
+    color: #22262a;
+    color: #d3d3d3;
+    color: #808080;
+    color: #f8f8f8;
+
+}

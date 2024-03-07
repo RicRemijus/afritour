@@ -1,0 +1,22 @@
+
+
+/* VIDEO GALLERY */
+.galBody{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.gallery{
+  display: grid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wrap{
+  z-index: 1;
+  width: 290px;
+  height: 320px;
+  background-color: green;
+  margin-left: .6rem;
+}
+/*SIGN UP*/
